@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.firstzms{
+    height: 800px;
+    width: 100%;
+    background-image:url(" https://www.zoomcar.com/assets/component-images/ZMS-Hero-Banner.584135fee08ac6c84fee329d5fb915f4.jpg");
+background-size:cover;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+position:relative;
+  display: flex;
+       background-size: cover;
+    background-position: 50% 70%;
+    margin: 0px;
+}
+body {
+    
+    color: white;
+    display: block;
+}
+img{
+margin-top: 30px;
+    margin-left: 100px;
+}
+h1{
+    font-size: xx-large;
+}
+#btn{
+    padding: 12px 33.7px 12px 34px;
+    border: none;
+    border-radius: 4px;
+    background-color: #10a310;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    min-width: 220px;
+    outline: none;
+    cursor: pointer;
+    margin-left: 50px;
+}
+.bottombordergreen{
+    height: 16px;
+    background-color: #10a310;
+}
+div{
+    display: block;
+}
+.sectionHeading
+{
+    font-size: 32px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.31;
+    letter-spacing: normal;
+    text-align: center;
+    color: #1f1f1f;
+    padding-top: 5%;
+}
+.insidetext{
+    font-size: 36px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    margin-top: 250px;
+    margin-left: 400px;
+}
+.outsidetext{
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: .24px;
+    text-align: center;
+    color: #fff;
+   
+    margin-top: 0px
+}
+.bigtab{
+    display: flex;
+    flex-direction: column;
+    margin-left:0px;
+    margin-top: 150PX;
+}
+.tabcontainer{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+        border-radius: 8px;
+    box-shadow: 0 1px 5px 0 rgb(0 0 0 / 20%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 2px 2px 0 rgb(0 0 0 / 14%);
+    background-color: #fff;
+    width: 100%;
+    max-width: 900px;
+    position:relative;
+    box-shadow: rgba(126, 126, 145, 0.2) 0px 7px 29px 0px;
+    
+}
+.tabitem1{
+    font-family: IBM Plex Sans;
+    font-size: 30px;
+    font-weight: 600;
+    color: #1f1f1f;
+    padding: 1px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+.tabitem2
+{
+    font-family: IBM Plex Sans;
+    font-size: 30px;
+    font-weight: 600;
+    color: #1f1f1f;
+    padding: 1px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+.tabbody{
+    padding: 72px 32px 32px;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    width: 80%;
+    max-width: 940px;
+    align-self: center;
+}
+.main-description{
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    text-align: center;
+    color: #666;
+    padding-top: 20px;
+    margin-bottom: 0px;
+    max-width: 620px;
+    margin: 0 auto
+    
+}
+.tabindex{
+    border-radius: 4px;
+    width: 100%;
+}
+.features
+{
+    font-size: 30px;
+    font-weight: 600;
+  width: 60%;
+    font-style: normal;
+        color: #666;
+    padding-bottom: 14px;
+padding-left: 15px;
+
+}
+.tabinside{
+    background-color: rgba(250, 245, 245, 0.733);
+    width: 1000px;
+    position: relative;
+    margin-left: 200px;
+    margin-right: 300px;
+    text-align: left;
+}
+.imageindex{
+width: 50%;
+margin-left: 1px;
+}
+.primaryrPlatform
+{
+font-size: 15px;
+text-align: left;
+padding-left: 15px;
+
+}
+.secondary{
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: .24px;
+    color: #666;
+padding-left: 15px;   
+}
+.analyticPlatform
+{
+    font-size: 15px;
+text-align: left;
+padding-left: 15px;
+padding-top: 20px;
+}
+.SubscriptionPlatform
+{
+    font-size: 15px;
+text-align: left;
+padding-left: 15px;
+padding-top: 20px;
+
+}
+.DynamicPlatform
+{
+    font-size: 15px;
+text-align: left;
+padding-left: 15px;
+padding-top: 20px;
+}
+#nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    position: sticky;
+    position: -webkit-sticky;
+        width: 100%;
+    height: 50px;
+    background-color: black;
+   
+}
+.RenterPlatform
+{
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .24px;
+}
+.innerrenter
+{
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: .24px;
+    color: #666;
+    padding: 10px;
+}
+.textdiv{
+    display: inline-block;
+    width: 500px;
+    height: 100px;
+}
+.textdiv2{
+    display: inline-block;
+    width: 500px;
+    height: 100px;
+}
+.button2
+{
+    padding: 12px 33.7px 12px 34px;
+    border: none;
+    border-radius: 4px;
+    background-color: #10a310;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    min-width: 220px;
+    outline: none;
+    cursor: pointer;
+}
+.heading{
+    background: url("https://www.zoomcar.com/assets/component-images/bound@2x.476261040c66e2e84987563e0b955b44.jpg");
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    margin-top: 50px;
+    font-size: 30px;
+
+}
+.bulletboxcontainer
+{
+    position: relative;
+    padding: 48px 72px;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    margin: 0 auto;
+    max-width: 940px;
+}
+.bulletcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.buleetwrap1{
+    display: flex;
+}
+.bulletwrap2{
+    display: flex;
+}
+.bulletwrap3{
+    display: flex;
+}
+.innerbullet1{
+    max-width: 294px;
+    min-height: 124px;
+    padding-bottom: 80px;
+    padding-right: 20px;
+}
+.inner1primary
+{
+    font-family: IBM Plex Sans;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: .24px;
+    font-weight: 600;
+    color: #1f1f1f;
+    padding-bottom: 8px;
+}
+.inner2primary{
+    font-family: IBM Plex Sans;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: .24px;
+    font-weight: 400;
+    color: #666;
+}
+.innerbullet2
+{
+    max-width: 294px;
+    min-height: 124px;
+    padding-bottom: 80px;
+    padding-right: 20px;
+}
+.innerbullet3
+{
+    max-width: 294px;
+    min-height: 124px;
+    padding-bottom: 80px;
+    padding-right: 20px;
+}
+
+div{
+    display: block;
+}
+.innerbullet2primary{
+    font-family: IBM Plex San8;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: .24px;
+    font-weight: 600;
+    color: #1f1f1f;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-right: 20px;
+    margin-right: 5px;
+}
+.innerbullet3primary{
+    font-family: IBM Plex San8;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: .24px;
+    font-weight: 600;
+    color: #1f1f1f;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-right: 20px;
+    margin-right: 5px;
+
+
+}
+
+.innerbullet2second
+{
+    font-family: IBM Plex Sans;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: .24px;
+    font-weight: 400;
+    color: #666;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+.innerbullet3second
+{
+    font-family: IBM Plex Sans;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: .24px;
+    font-weight: 400;
+    color: #666;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+.icon
+{
+    padding-bottom: 10px;
+    width: 32px;
+    height: 32px;
+}
+.dashboard-banner {
+    position: relative;
+    top: -50vh;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.whitebag{
+    height: 10vh;
+}
+.sectioncontent{
+    padding: 120px 16px 54px;
+    top: -65vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sectiontitle
+{
+    font-family: IBM Plex Sans;
+    font-size: 32px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.31;
+    letter-spacing: normal;
+    text-align: center;
+    color: #1f1f1f;
+    max-width: 420px;
+    font-size: 30px;
+    
+}
+.sectionsubtext{
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: .24px;
+    text-align: center;
+    color: #666;
+    max-width: 460px;
+    padding-top: 16px;
+}
+.square-cards {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -65vh;
+    width: 60%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 960px;
+}
+.text-input-wrapper input {
+    border: none;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: .24px;
+    color: #666;
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    width: 100%;
+    padding: 16px 12px;
+    outline: none;
+    display: flex;
+}
+.btn-cta {
+    padding: 12px 33px 12px 34px;
+    border: none;
+    border-radius: 4px;
+    background-color: #10a310;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    min-width: 220px;
+    outline: none;
+    }
+.input-box-container {
+    width: 50%;
+    padding-bottom: 20px;
+}
+.bottom-border-green {
+    height: 16px;
+    background-color: #10a310;
+}
+.cta-container {
+    display: flex;
+       padding-top: 40px;
+    margin-left: 15px
+}
+
+ .square-card-wrapper {
+     
+    margin: 0 20px 20px 0;
+    width: 150px;
+    height: 170px;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-image: linear-gradient(318deg#0b0b0b,#1b1b1b 3%);
+    width: 170px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   margin-top: 300px;
+ }
+ .square-card-wrapper2 {
+    margin: 0 20px 20px 0;
+    width: 150px;
+    height: 170px;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-image: linear-gradient(
+318deg
+,#0b0b0b,#1b1b1b 3%);
+    width: 170px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+ }
+
+ .layered-bg {
+    background: url("	https://www.zoomcar.com/assets/component-images/rectangle.e2190cd211f285fb86e5c7809c0f7b42.jpg") repeat;
+}
+
+.cardicon
+{
+    width: 32px;
+    height: 32px;
+    
+}
+.section-wrapper {
+    padding: 0 16px;
+    position: relative;
+    top: -40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-title {
+    font-family: IBM Plex Sans;
+    font-size: 32px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.31;
+    letter-spacing: normal;
+    text-align: center;
+    color: #1f1f1f;
+    max-width: 420px;
+
+}
+.contact-form {
+    padding-top: 70px;
+}
+.section-subtext {
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: .24px;
+    text-align: center;
+    color: #666;
+    max-width: 460px;
+    padding-top: 16px;
+}
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 84px;
+    padding-bottom: 64px;
+    background-image: linear-gradient(
+270deg
+,#000,#1f1f1f);
+    font-family: IBM Plex Sans;
+    text-align: center;
+    
+}
+.mailId {
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: .16px;
+    text-align: center;
+    color: #fff;
+    padding-top: 8px;
+}
+.footerimage{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+.copyright {
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: .24px;
+    text-align: center;
+    color: #a8a8a8;
+    padding-top: 28px;
+}
+.for-more-info {
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: .24px;
+    text-align: center;
+    color: #fff;
+}
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <img src="data:image/png;base64,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" height="30px" width="100px">
+       <button style="width: 100px; height: 40px;padding-top: 1px;margin-top: 10px;">Request Demo</button>  
+       </div>
+   <div id="container">
+       
+<div class="firstzms">
+<div  class="insidetext"><P>Inspiring Profitable Mobility<br> Solutions of Tomorrow</P>
+   <div class="outsidetext"><p>Suite of Connected Technology Offerings and Connected Mobility</p><p>Solutions for Businesses Worldwide</p></div>
+
+   <form action=""></form> <p><p><a href="#bottom" ><button type="submit" id="btn" >Request Demo</button></a></p></p></form>
+  
+</div>
+</div>
+<div class="bottombordergreen"></div>
+<div class="sectionHeading">
+    Product Offering
+    <div class="bigtab">
+        <div class="tabcontainer">
+       <div class="tabitem1"> Connected Vehicle Solutions</div>
+           <div class="tabitem2"> Yield Management Services</div>
+        </div>
+        </div>
+        <div class="tabinside">
+        <div class="main-description">Suite of connected technologies offering fleet agnostic solutions aimed at driving higher revenue through better yield management and dual fleet utilisation to expand customer base</div>
+
+    <div class="imageindex">
+        <img src="C:\Users\HP\Desktop\ZMS_Slide-Banner_201_F.c6cae2c0c2d78e980c507982bab4c1b9.jpg" alt="" width="700px">
+        </div> 
+    <div class="features">
+        features
+            </div>
+           <div class="textdiv">
+            <div class="RenterPlatform"> Renter Platform</div>
+<div class="innerrenter">Customisable stack to launch<br> station based & free-floating<br> keyless renter services  </div>
+           </div>
+           <div class="RenterPlatform"> Renter Platform</div>
+           <div class="innerrenter">Customisable stack to launch<br> station based & free-floating<br> keyless renter services  </div>
+        <button class="button2">More Details</button>  
+        </div>
+<div class="green bag">
+    <div class="heading"> Why Partner With Us?</div>
+</div>
+         </div>
+         <div class="bulletboxcontainer">
+    <div class="bulletcontainer">
+
+<div class="buleetwrap1">
+    <div class="innerbullet1">
+        <img src="https://www.zoomcar.com/images/icons-timer-new.png" alt="" class="icon">
+ <div class="inner1primary"><p>Quick Go-To Market</p></div>
+ <div class="inner2primary"> Quick and easy onboarding with <br>a fast turnaround time of one week</div>
+    </div>
+<div class="innerbullet2"> 
+    <img src="	https://www.zoomcar.com/images/icons-car-new.png" alt="" class="icon">
+    <div class="innerbullet2primary">India’s largest<br> B2C Mobility Platform</div>
+    <div class="innerbullet2second">Fleet management experience <br>of managing 20,000+ assets</div>
+</div>
+<div class="innerbullet3">
+    <img src="https://www.zoomcar.com/images/icons-remote-new.png" alt="" class="icon">
+    <div class="innerbullet3primary">Works Across Vehicle Types</div>
+    <div class="innerbullet3second">Works seamlessly across - 2W, 3W, Cars, <br>Trucks & Electric Vehicles alike</div>
+</div>
+</div>
+<div class="bulletwrap2">
+    <div class="innerbullet1">
+        <img src="https://www.zoomcar.com/images/icons-table-new.png" alt="" class="icon">
+ <div class="inner1primary"><p>Advanced Data Science Capabilities</p></div>
+ <div class="inner2primary"> Self-learning algorithms powered by Artificial <br>Intelligence & Machine Learning <br>to predict driver behaviour</div>
+    </div>
+<div class="innerbullet2"> 
+    <img src="		https://www.zoomcar.com/images/icons-license-new.png" alt="" class="icon">
+    <div class="innerbullet2primary">Commitment to<br> Customer Satisfaction</div>
+    <div class="innerbullet2second">24x7 dedicated assistance<br> and support system</div>
+</div>
+<div class="innerbullet3">
+    <img src="	https://www.zoomcar.com/images/icons-delivery-green-new.png" alt="" class="icon">
+    <div class="innerbullet3primary">Pioneer in Shared subscription</div>
+    <div class="innerbullet3second">Innovative techniques to enable 2-sided <br>marketplaces for better utilisation & <br>revenue</div>
+</div>
+
+</div>
+<div class="bulletwrap3">
+
+   <div class="innerbullet1">
+        <img src="	https://www.zoomcar.com/images/icons-setting-green-new.png" alt="" class="icon">
+ <div class="inner1primary"><p>Proven Next Gen Technology</p></div>
+ <div class="inner2primary"> Best in class stable and scalable tech solutions</div>
+    </div>
+<div class="innerbullet2"> 
+    <img src="	https://www.zoomcar.com/images/icons-distance-new.png" alt="" class="icon">
+    <div class="innerbullet2primary">Futuristic Products</div>
+    <div class="innerbullet2second">Always in sync with the evolving business landscape</div>
+</div>
+<div class="innerbullet3">
+    <img src="		https://www.zoomcar.com/images/icons-office-new.png" alt="" class="icon">
+    <div class="innerbullet3primary">Powering Multiple Sectors</div>
+    <div class="innerbullet3second">Partners range from Government bodies to Global companies across varied geographies</div>
+</div>
+</div>
+    </div>  
+
+</div>    
+    </div> 
+</div>
+<div>
+<img src="https://www.zoomcar.com/assets/component-images/dashboard@2x.a2445440373cd84df21b0d887b8d389f.png" width="1200px" height="800px"alt="" class="dashboardbanner">
+</div>
+<div class="whitebag">
+</div>
+<div class="layeredbag">
+
+<div class="sectioncontent">
+<div class="sectiontitle">  </div>
+<div class="sectionsubtext"></div>
+</div>
+</div>
+</div>
+<div class="square-cards">
+    <div class="square-card-wrapper">
+ <img src="	https://www.zoomcar.com/images/icons-fuel-fuel-type.png" alt="card-icon" class="icon"> 
+  <div class="title">30% Fuel Costs Savings</div></div> <div class="square-card-wrapper mlr-20 mb-40">
+  <img src="	https://www.zoomcar.com/images/icons-swap.png" alt="card-icon" class="icon"> 
+ <div class="title">20% Reduction in Fleet Downtime
+
+        </div></div>
+        <div class="square-card-wrapper">
+        <img src="https://www.zoomcar.com/images/icons-car-pick-up.png" alt="card-icon" class="icon">
+         <div class="title">50% Less Accidents &amp; Better Safety
+
+         </div></div>
+      <div class="square-card-wrapper">
+      <img src="	https://www.zoomcar.com/images/icons-deposit.png" alt="card-icon" class="icon">
+                           
+     <div class="title">25% Maintenance Cost Reduction</div></div> 
+         <div class="square-card-wrapper2">
+  <img src="	https://www.zoomcar.com/images/icons-ruppee.png" alt="card-icon" class="icon">
+              <div class="title">15% Revenue Uplift</div></div> 
+   <div class="square-card-wrapper2">
+  <img src="	https://www.zoomcar.com/images/icons-arrows-arrow-right-top.png" alt="card-icon" class="icon">
+                     
+  <div class="title">Increase in sales funnel conversion and utilisation</div></div></div>      
+<div class="section-wrapper">
+    <div class="section-title">Connect With Us</div>
+    <div class="section-subtext">Leave details for us to help your business become future ready</div> 
+    <div class="contact-form">
+        <div class="form-horizontal"
+ ><div class="input-box-container right-spacing">
+    
+  <div class="text-input-wrapper">
+    <form>
+<input name="contactName" id="contactName" placeholder="Name" maxlength="250" inputmode="text" autocomplete="off" type="text" class="">
+<div class="error-msg"></div></div></div>
+ <div class="input-box-container">
+ <div class="text-input-wrapper">
+<input name="contactCompany" id="contactCompany" placeholder="Company Name" maxlength="250" inputmode="text" autocomplete="off" type="text" class="">
+<div class="error-msg"></div></div></div></div> 
+<div class="input-box-container">
+ <div class="text-input-wrapper">
+<input name="contactEmailId" id="contactEmailId" placeholder="Email" maxlength="250" type="text" class="">
+ <div class="error-msg">Enter a valid email id</div></div></div> 
+<div class="form-horizontal"><div class="input-box-container right-spacing">
+ <div class="text-input-wrapper">
+<input name="contactPhone" id="contactPhone" placeholder="Phone Number" maxlength="10" inputmode="numeric"  type="text" class="">
+<div class="error-msg">Enter a valid phone number</div>
+</div></div>
+ <div class="input-box-container"><div class="text-input-wrapper">
+ <input name="contactCountry" id="contactCountry" placeholder="Country" maxlength="250" inputmode="text"  type="text" class="">
+  <div class="error-msg"></div></div></div></div>
+<div class="input-box-container"><div class="textarea-input-wrapper">
+ <textarea type="text" name="requirements" id="requirements" placeholder="Mention Requirements" inputmode="text"  rows="4" cols="50"></textarea>
+</div></div> 
+ <div class="cta-container ">
+     <input type="submit" class="btn-cta" value="Submit">
+ </form>
+</div>
+ <div class="error"></div></div></div>
+ <div class="bottom-border-green"> </div>
+<section class="footer-section">
+ For more information, connect with us at</div> <div class="mailId">zms.contact@zoomcar.com</div> 
+ <img src="https://www.zoomcar.com/assets/component-images/zms-logo-white.2af37707ebe1f0942fd6285bb0fdf3d9.png"class="footerimage" width="100px" height="50px"alt="footer-logo"> 
+ <div class="copyright">ⓒ 2020 Zoomcar | All Rights Reserved</div>
+</section>
+</body>
+</html>
+
+<script>
+    document.querySelector("form").addEventListener("submit", formSubmit);
+    var userStack = JSON.parse(localStorage.getItem("userDataBase")) || [];
+    
+    function formSubmit(event) 
+    {
+      event.preventDefault();
+var name = document.querySelector("#contactName").value;
+var email = document.querySelector("#contactEmailId").value;
+var mbl = document.querySelector("#contactPhone").value;
+var country = document.querySelector("#contactCountry").value;
+var requirement = document.querySelector("#requirements").value;
+  
+      var userData = {
+          nme:name,
+        emailAdd: email,
+        mobl: mbl,
+        cntry:country,
+        rqrmnt:requirement
+      };
+        userStack.push(userData);
+        
+      console.log(userStack);
+      localStorage.setItem("userDataBase", JSON.stringify(userStack));
+      alert("Data Saved");
+      
+    }
+    
+</script>
