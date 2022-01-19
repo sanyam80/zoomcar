@@ -271,6 +271,9 @@ padding-top: 20px;
     min-width: 220px;
     outline: none;
     cursor: pointer;
+ margin-top: 300px;
+ margin-left:100px;
+
 }
 .heading{
     background: url("https://www.zoomcar.com/assets/component-images/bound@2x.476261040c66e2e84987563e0b955b44.jpg");
@@ -418,34 +421,7 @@ div{
     align-items: center;
     flex-direction: column;
 }
-.sectiontitle
-{
-    font-family: IBM Plex Sans;
-    font-size: 32px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.31;
-    letter-spacing: normal;
-    text-align: center;
-    color: #1f1f1f;
-    max-width: 420px;
-    font-size: 30px;
-    
-}
-.sectionsubtext{
-    font-family: IBM Plex Sans;
-    font-size: 16px;
-    font-weight: 400;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: .24px;
-    text-align: center;
-    color: #666;
-    max-width: 460px;
-    padding-top: 16px;
-}
+
 .square-cards {
     display: flex;
     align-items: center;
@@ -512,13 +488,15 @@ div{
     padding: 12px;
     box-sizing: border-box;
     border-radius: 4px;
-    background-image: linear-gradient(318deg#0b0b0b,#1b1b1b 3%);
+    background-image: linear-gradient(
+318deg
+,#0b0b0b,#1b1b1b 3%);
     width: 170px;
     height: 200px;
-    display: flex;
+    margin-top: 300px;
     flex-direction: column;
     justify-content: space-between;
-   margin-top: 300px;
+   
  }
  .square-card-wrapper2 {
     margin: 0 20px 20px 0;
@@ -635,6 +613,35 @@ div{
     text-align: center;
     color: #fff;
 }
+.feature-bullets-container {
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-padding-40 {
+    padding-bottom: 40px;
+}
+.bullet-point {
+    padding-right: 20px;
+}
+.primary-title {
+    font-weight: 600;
+    color: #1f1f1f;
+    padding-bottom: 8px;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 5px;
+    letter-spacing: .24px;
+}
+.secondary-sub-text {
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: .24px;
+    color: #666;
+    padding-left: 5px;
+}
     </style>
 </head>
 <body>
@@ -670,13 +677,27 @@ div{
     <div class="features">
         features
             </div>
-           <div class="textdiv">
-            <div class="RenterPlatform"> Renter Platform</div>
-<div class="innerrenter">Customisable stack to launch<br> station based & free-floating<br> keyless renter services  </div>
-           </div>
-           <div class="RenterPlatform"> Renter Platform</div>
-           <div class="innerrenter">Customisable stack to launch<br> station based & free-floating<br> keyless renter services  </div>
-        <button class="button2">More Details</button>  
+            <div class="feature-bullets-container">
+                <div class="feature-bullets-wrapper">
+                    <div class="bullet-point bottom-padding-40">
+   <div class="primary-title">Vehicle Tracking &amp; Safety</div> 
+  <div class="secondary-sub-text">Geo-fencing, Real time alerts, immobilization to manage 24x7</div>
+ </div> <div class="bullet-point">
+ <div class="primary-title">Fuel Management</div> 
+ <div class="secondary-sub-text">Real time fuel level monitoring and fuel theft detection mechanisms</div>
+</div></div> <div class="feature-bullets-wrapper"><div class="bullet-point bottom-padding-40">
+     <div class="primary-title">Driver Score</div>
+ <div class="secondary-sub-text">Improved fuel efficiency and cost benefits from better driving behavior</div>
+</div> <div class="bullet-point">
+    <div class="primary-title">Operations Automation</div>
+ <div class="secondary-sub-text">Automate routine operational tasks and increase uptime over 25%</div></div>
+</div> <div class="feature-bullets-wrapper">
+    <div class="bullet-point bottom-padding-40">
+        <div class="primary-title">Vehicle Health Monitoring</div> 
+        <div class="secondary-sub-text">Real-time Asset health monitoring systems for reduced downtime</div>
+    </div></div>
+    
+    <div ><button class="button2">More Details</button></div>  
         </div>
 <div class="green bag">
     <div class="heading"> Why Partner With Us?</div>
@@ -758,28 +779,23 @@ div{
 </div>
 <div class="square-cards">
     <div class="square-card-wrapper">
- <img src="	https://www.zoomcar.com/images/icons-fuel-fuel-type.png" alt="card-icon" class="icon"> 
-  <div class="title">30% Fuel Costs Savings</div></div> <div class="square-card-wrapper mlr-20 mb-40">
-  <img src="	https://www.zoomcar.com/images/icons-swap.png" alt="card-icon" class="icon"> 
- <div class="title">20% Reduction in Fleet Downtime
-
-        </div></div>
-        <div class="square-card-wrapper">
-        <img src="https://www.zoomcar.com/images/icons-car-pick-up.png" alt="card-icon" class="icon">
-         <div class="title">50% Less Accidents &amp; Better Safety
-
-         </div></div>
-      <div class="square-card-wrapper">
-      <img src="	https://www.zoomcar.com/images/icons-deposit.png" alt="card-icon" class="icon">
-                           
-     <div class="title">25% Maintenance Cost Reduction</div></div> 
-         <div class="square-card-wrapper2">
-  <img src="	https://www.zoomcar.com/images/icons-ruppee.png" alt="card-icon" class="icon">
-              <div class="title">15% Revenue Uplift</div></div> 
-   <div class="square-card-wrapper2">
-  <img src="	https://www.zoomcar.com/images/icons-arrows-arrow-right-top.png" alt="card-icon" class="icon">
-                     
-  <div class="title">Increase in sales funnel conversion and utilisation</div></div></div>      
+        <img src="https://www.zoomcar.com/images/icons-fuel-fuel-type.png" alt="card-icon" class="icon"> 
+        <div class="title">30% Fuel Costs Savings</div></div>
+         <div class="square-card-wrapper">
+             <img src="https://www.zoomcar.com/images/icons-swap.png" alt="card-icon" class="icon"> 
+             <div class="title">20% Reduction in Fleet Downtime</div></div>
+              <div class="square-card-wrapper ">
+ <img src="https://www.zoomcar.com/images/icons-deposit.png" alt="card-icon" class="icon"> 
+ <div class="title">50% Less Accidents &amp; Better Safety</div></div> 
+<div class="square-card-wrapper">
+ <img src="	https://www.zoomcar.com/images/icons-car-pick-up.png" alt="card-icon" class="icon"> 
+ <div class="title">25% Maintenance Cost Reduction</div></div>
+  <div class="square-card-wrapper2" >
+      <img src="	https://www.zoomcar.com/images/icons-ruppee.png" alt="card-icon" class="icon">
+   <div class="title">15% Revenue Uplift</div></div>
+    <div class="square-card-wrapper2">
+        <img src="https://www.zoomcar.com/images/icons-arrows-arrow-right-top.png" alt="card-icon" class="icon"> 
+        <div class="title">Increase in sales funnel conversion and utilisation</div></div></div>
 <div class="section-wrapper">
     <div class="section-title">Connect With Us</div>
     <div class="section-subtext">Leave details for us to help your business become future ready</div> 
