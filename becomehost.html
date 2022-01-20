@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zmspage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/629044acfa.js" crossorigin="anonymous"></script>
+</head>
+
+
+<style>
+     body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+ 
+}
+   
+    #navbar{
+            display: flex;
+            width: 100%;
+            background-color: black;
+            border-radius: 8px;
+            height: 50px;
+           justify-content: center;
+            align-items: center;
+        }
+       
+        #navleft{
+            padding: 8px;
+            color: aliceblue;
+        }
+        #navmiddle{
+            width: 25%;
+            padding-left: 50px;
+            color: aliceblue;
+        }
+        #navright{
+            width: 40%;
+            justify-content: space-between;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-around;
+        }
+        p{
+            margin:0px;
+            font-size: 10px;
+
+        }
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            color: aliceblue;
+            
+        }
+    #firstbox{
+    width:65%;
+    height: 280px;
+    margin: auto;
+    padding: 54px 0 60px 90px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+      background-position: center;
+    background-image: url("https://d3nf5tpyv9dqpe.cloudfront.net/build/0c2a7b883fc9ecd555fa373153388b48.png");
+    border-radius: 12px;
+    
+}
+h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 30px;
+}
+p{
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+
+}
+#videos{
+        width: 70%;
+        height: 600px;
+        margin: auto;
+        margin-top: 25px;
+    }
+#btn1{
+    color: white;
+    background-color:green;
+    padding:10px 10px 10px 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-size: 20px;
+    }
+    #secondbox{
+        display:grid;
+        width: 66%;
+        grid-template-columns: repeat(2,500px);
+        grid-template-rows: repeat(3,250px);
+        gap: 12px;
+        margin:auto;
+    }
+    #secondbox>div{
+       
+        margin-top: 10px;
+        border-radius: 20px;
+    }
+    #scrolingimages{
+        display: grid;
+        overflow-x: scroll;
+        width: 65%;
+        grid-template-columns:repeat(5,300px);
+        grid-template-rows: repeat(1,400px);
+        margin: auto;
+        column-gap: 10px;
+
+    } 
+    #thirdbox{
+        display:grid;
+        grid-template-columns: repeat(4,267px);
+        grid-template-rows: repeat(1,250px);
+    
+        width: 70%;
+        column-gap: 10px;;
+        margin: auto;
+    }
+    #thirdbox>div{
+        border-right: 1px solid darkgrey;    
+    }
+    #earningbtn{
+        color: white;
+    background-color:green;
+    padding:8px 8px 8px 8px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 10px;
+     border-radius: 10PX;
+    font-size: 15px;
+    margin-left:210px;
+    line-height: 30px;
+    }
+    #fourthbox{ 
+    width:75%;
+    height: 300px;
+    margin: auto;
+    padding: 54px 0 40px 0px;
+  
+    background-image: url("https://www.zoomcar.com/zap/subscribe/build/7866620612606785edc1d42434375cf6.jpeg");
+    background-size: 100%;
+    border-radius: 12px;
+    } 
+    #contentbox{
+        margin-top: 300px;
+        background-color: whitesmoke;
+        width: 75%;
+        height: 250px;
+        border-radius: 10px;
+        margin: auto;
+    }
+  #dropdetail{
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+            border-bottom:2px solid gainsboro
+  }
+  #dropdetail a{
+      text-decoration: none;
+  }
+#questions{
+    display: flex;
+    width: 70%;
+    height:500px;
+    margin: auto;
+    color:blanchedalmond;
+    margin-top: 20px;
+}
+.stillhavequestion{
+    width: 35%;
+    height: 100%;
+}
+.dropdownbox{
+    width:65% ;
+    margin-left: 40px;
+}
+#confused{
+    display: flex;
+    width: 70%;
+    height:150px;
+    margin: auto;
+    color:blanchedalmond;
+   
+}
+.contecus{
+    width:65% ;
+    height: 100%;
+    margin-left: 40px;
+    display: flex;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.a1{
+width: 60%;
+margin-left: 20px;
+}
+.justifysetting a{
+    display: flex;
+    justify-content:space-between;
+    text-decoration: none;
+    margin-top: 30px;
+
+    }
+    #lastbox{
+        margin: auto;
+        width: 70%;
+        background-color:whitesmoke;
+        height: 200px;
+        margin-top: 20px;
+    }
+    #brefing{
+        width: 70%;
+        margin: auto;
+    }
+  
+          
+</style>
+
+<body>
+    <div id="navbar">
+        <div id="navleft">
+        <i class="fas fa-bars"></i>
+        </div>
+    <div id="navmiddle"> <b>ZOOMCAR</b> <P>  ...Never Stop Living</P></div>
+      <div id="navright">
+        <a href="">Contect Us</a>
+        <a href="">FAQs</a>
+        <a href="">Refer & Earn</a>
+        <a href="">sign up/ Log In</a>
+        <button style="background-color:green;padding: 6PX;
+  font-family: IBM Plex sans;border-radius: 10px;"><p style="color:blanchedalmond;"><a href="https://www.google.com/"><b>START EARNING</b></a></p></button>
+      </div>
+
+    </div>
+    <div id="firstbox">
+        <h1>Share your car when</h1>
+        <h1>not in use and earn up to </h1>
+        <h1>16 Mil VND per month!</h1>
+        <p>Earn fixed amount per sharing hour,</p>
+        <p>Guaranteed weekly payment</p>
+        <p>No Conditions Apply</p>
+        <button onclick="startearning" id="btn1"><b>START EARNING</b></button>
+    </div>
+    <div id="videos">
+    <video width="100%" height="100%" controls>
+        <source src="https://www.zoomcar.com/zap/subscribe/build/64440836bb2a2ee19961407349dece57.mp4" type="video/mp4">
+      </video>
+      </div>
+    <h1 style="color: black;font-size: 40px;text-align: center;margin-top: 60px;"> 3 Simple steps to start Earning with your car in 24</h1>
+    <h1 style="color: black;font-size: 40px;text-align: center;">hours</h1>
+
+    <div id="secondbox">
+        <div >
+            <h2 style="margin-left: 10px;font-family: IBM Plex Sans">1. Sign up for Free!</h2>
+            <p style="color:black; line-height: 30px;font-size: 20px;margin: 10px;font-family: IBM Plex Sans;color: gray;">Become part of the Zoomcar  Host program for absolutely free by filling up a short form sign-up .It takes less than 2 mins to fill the form .No hidden charges.</p>
+        </div>
+        <div >
+
+            <img 
+            width="80%"
+            src="https://d3nf5tpyv9dqpe.cloudfront.net/build/bb6776beb9b8bacdc711e5a43f401134.svg">
+        </div>
+       
+        <div>
+
+            <img 
+            width="80%"
+            src="https://d3nf5tpyv9dqpe.cloudfront.net/build/29d798d8bc5d57bf22445ed3cc67cff1.svg">
+        </div>
+        <div >
+            <h2 style="margin-left: 10px;font-family: IBM Plex Sans;">2. Get your Helath Checked!</h2>
+            <p style="color:black; line-height: 30px;font-size: 20px;margin: 10px;font-family: IBM Plex Sans;color: gray;">Once we recived your details ,Our experts visites your location to assess your vehicle ,and install safety devices in it to ensure complete safety of your car .It all happens in 24hours</p>
+        </div>
+        <div >
+            <h2 style="margin-left: 10px;">3. Share and Earn</h2>
+            <p style="color:black;; line-height: 30px;font-size: 20px;margin: 10px;font-family: IBM Plex Sans;color: gray;">Share your car through the Zoomcar Host app whenever you are not using it. Flexiblilty in sharing,Shareas much or as less as your like .Your <b style="color: black;">weekly</b>  earnings get credit directly to your bank account! </p>
+        </div>
+       
+        <div >
+             <img 
+            width="80%";
+            src="https://d3nf5tpyv9dqpe.cloudfront.net/build/fc0cb48e9b85b44423a6660ba79ad43e.svg">
+        </div>
+      
+    </div>
+    <h1 style="color: black;margin-top: 10px;font-family: IBM Plex sans;margin-left: 210px;">How we protect your car</h1>
+
+  <div id="scrolingimages">
+        <div>    
+            <img 
+            width="100%"
+            src="https://d3nf5tpyv9dqpe.cloudfront.net/build/e2bfa54a9b46567921c3f14e1276c68e.svg">
+                <h3 style="margin-left: 10px;">100% damage cover and repair</h3>
+                <p style="color:black;; line-height: 30px;font-size: 15px;margin: 10px;font-family: IBM Plex Sans;color: gray;">Zoomcar  provides damges cover and repair handling incases of an unlikely incident of an accident during the sharing period/ when your car is on a booking. </p>
+        </div>
+        <div>    
+            <img 
+            width="100%"
+            src="https://d3nf5tpyv9dqpe.cloudfront.net/build/1f4b5b69d928bbf104735bdea4914f79.svg">
+                <h3 style="margin-left: 10px;">Your Car Stays in Safe Hands!</h3>
+                <p style="color:black;; line-height: 30px;font-size: 15px;margin: 10px;font-family: IBM Plex Sans;color: gray;">All our renters are verified individuals with valid Driving license ,and have excellent driving stats  in the past on our platform .We have complete contact and address details of all our renters.  </p>
+        </div>
+        <div>    
+            <img 
+            width="100%"
+            src="https://d3nf5tpyv9dqpe.cloudfront.net/build/eb002ff59dd838a60fd664d21539d877.svg">
+                <h3 style="margin-left: 10px;">Contactless sharing</h3>
+                <p style="color:black;; line-height: 30px;font-size: 15px;margin: 10px;font-family: IBM Plex Sans;color: gray;">Our keyless technology enables contactless pick-up & drop of your car.  </p>
+        </div>
+        <div>    
+            <img 
+            width="100%"
+            src="https://d3nf5tpyv9dqpe.cloudfront.net/build/584189ee6116aeef9f0bfad788813be1.svg">
+                <h3 style="margin-left: 10px;">Flexibility in sharing</h3>
+                <p style="color:black;; line-height: 30px;font-size: 15px;margin: 10px;font-family: IBM Plex Sans;color: gray;">Share your car whenever you want your usage and convenience </p>
+        </div>
+        <div>    
+            <img 
+            width="100%"
+            src="https://d3nf5tpyv9dqpe.cloudfront.net/build/a0073dafcc39c09bcf084add77f94472.svg">
+                <h3 style="margin-left: 10px;">24 x 7 customer support</h3>
+                <p style="color:black;; line-height: 30px;font-size: 15px;margin: 10px;font-family: IBM Plex Sans;color: gray;">Call us ,Chat with us , drop an Email to us , we've got your back round the clock!</p>  
+         </div>
+
+    </div>
+
+    <h1 style="color: black;margin-top: 25px;font-family: IBM Plex sans;margin-left:230px;">Growing Rapidly</h1>
+    <p style="color:black;font-size: 15px;margin-left:210px;font-family: IBM Plex Sans;color: grey;margin-top: 30px;">Join Host program and be part of the largest tech enabled car sharing marketplace.</p>
+    
+<div id="thirdbox">
+       <div>
+            <center><img 
+            width="30%";
+            src="https://www.zoomcar.com/zap/subscribe/build/e3a6d127cac35a3a7a139256bb3761eb.png" style="margin-top: 30px;"></center>
+            <h2 style="text-align: center;margin-top: 50px;color: black;font-family: IBM Plex Sans">5000+</h2>    
+            <center><p style="margin-top: 50px;color: gray;font-size: 15px;font-family:IBM Plex Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif!important;">Satisfied hosts</p></center>      
+         </div>
+        <div>
+            <center><img 
+            width="30%";
+            src="https://www.zoomcar.com/zap/subscribe/build/4a5f55fc81b9a6df6a460a025fdfa509.png" style="margin-top: 30px;"></center>
+            <h2 style="text-align: center;margin-top: 50px;color: black;font-family: IBM Plex Sans">5lak+</h2>    
+            <center><p style="margin-top: 50px;color: gray;font-size: 15px;font-family:IBM Plex Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif!important;">Bookings served</p></center>      
+        </div>
+    
+        <div>
+            <center><img 
+             width="30%";
+             src="https://www.zoomcar.com/zap/subscribe/build/36da13bf403485c4efacd507efd93735.png" style="margin-top: 20px;"></center>
+             <h2 style="text-align: center;margin-top: 45px;color: black;font-family: IBM Plex Sans">32Cr+</h2>    
+             <center><p style="margin-top: 50px;color: gray;font-size: 15px;font-family:IBM Plex Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif!important;">KMs Run</p></center>      
+         </div>
+            <div>
+            <center><img 
+            width="30%";
+            src="https://www.zoomcar.com/zap/subscribe/build/c0db9479a08980b830b63433f60d336c.png" style="margin-top: 30px;"></center>
+            <h2 style="text-align: center;margin-top: 20px;color: black;font-family: IBM Plex Sans">₹120Cr+</h2>    
+            <center><p style="margin-top: 45px;color: gray;font-size: 15px;font-family:IBM Plex Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif!important;">Earned by hosts</p></center>      
+             </div>
+</div>
+  <h1 style="color: black;margin-top: 40px;margin-left:210px;">Share your<a href="#" style="color: green;text-decoration: none; "> XUV 500 </a><h1 ></h1>
+  <h1 style="color: black;margin-top: 40px;margin-left:210px ;"> and earn up to<b style="color: green;"> ₹36000/month</b></h1>
+  <p style="color:gray;margin-top: 40px;margin-left:210px;">Earn fixedd amount per sharing hour</p>
+  <button <a id="earningbtn">START EARNING</a></button>
+  <a href="https://www.google.com/" style="margin-left:210px"><p style="color: green;font-size: 15px;margin-left:230px;">How do we  estimate your  Earning?</p></a>
+<div id="fourthbox"></div>
+<div id="contentbox">
+    <p style="margin-top:30px;">.</p>
+    <h2 style="color:black;text-align: center;margin-top: 40px;">Users love Zoomcar Host program. Our app has 4.5+ rating on play store!</h2>
+    <center><img
+    src="https://www.zoomcar.com/zap/subscribe/build/aea91d732f319de2a0e5161e4fc311c7.jpg" style="margin-top: 30px;"></center> 
+</div>
+
+       
+<div id=questions>
+    <div class="stillhavequestion">
+        <h1 style="color: black;margin-top: 20px;font-family: IBM Plex sans;">Still have</h1>
+        <h1 style="color: black;margin-top: 20px;font-family: IBM Plex sans;;">Questions?</h1>
+            
+    </div>
+    <div class="dropdownbox">
+        <div >
+            <div id="dropdetail"><a href="#" ><p style="color: gray;text-align: left;font-family: IBM Plex Sans ;font-size: 16px;">Do I need to meet the reterd of my car?</p></a>
+             <a href="#" ><img
+            src="https://www.zoomcar.com/zap/subscribe/build/b6a35e84e2679c629ed351c4985e858f.svg" style="width: 20px;margin-top: 20px;"> </a>
+            </div>
+    
+            <div id="dropdetail"><a href="#" ><p style="color: gray;text-align: left;font-family: IBM Plex Sans ;font-size: 16px;">How will I get Paid?</p></a>
+             <a href="#" ><img
+            src="https://www.zoomcar.com/zap/subscribe/build/b6a35e84e2679c629ed351c4985e858f.svg" style="width: 20px;margin-top: 20px;"> </a>
+            </div>
+    
+            <div id="dropdetail"><a href="#" ><p style="color: gray;text-align: left;font-family: IBM Plex Sans ;width: 80%;font-size: 16px; line-height: 20px;">What happens if my cae gets challans of traffic fines while my car is beings shared ?</p></a>
+                <a href="#" ><img
+            src="https://www.zoomcar.com/zap/subscribe/build/b6a35e84e2679c629ed351c4985e858f.svg" style="width: 20px;margin-top: 20px;"> </a>
+            </div>
+    
+            <div id="dropdetail"><a href="#" ><p style="color: gray;text-align: left;font-family: IBM Plex Sans ;font-size: 16px;">How much will I earn?</p></a>
+                <a href="#" ><img
+            src="https://www.zoomcar.com/zap/subscribe/build/b6a35e84e2679c629ed351c4985e858f.svg" style="width: 20px;margin-top: 20px;"> </a>
+            </div>
+    
+            <div id="dropdetail"><a href="#" ><p style="color: gray;text-align: left;font-family: IBM Plex Sans ;font-size: 16px;">How is the price of my car decided?</p></a>
+                <a href="#" ><img
+            src="https://www.zoomcar.com/zap/subscribe/build/b6a35e84e2679c629ed351c4985e858f.svg" style="width: 20px;margin-top: 10px;"> </a>
+            </div>
+    
+            <div id="dropdetail"><p style="color: gray;text-align: left;font-family: IBM Plex Sans ;font-size: 16px;">why are safety devices installed?</p></a>
+            <a href="#" ><img
+            src="https://www.zoomcar.com/zap/subscribe/build/b6a35e84e2679c629ed351c4985e858f.svg" style="width: 20px;margin-top: 20px;"> </a>
+            </div>
+    </div>
+</div>
+</div>
+<div id ="confused">
+    <div class="stillhavequestion">
+        <h5 style="color: black;margin-top: 20px;font-family: IBM Plex sans;font-size: 42px;">Still Confused ? </h5>
+    </div>
+
+    <div class="contecus">
+        <div class="a1">
+            <h3 style="font-family: IBM Plex sans;color: black;">We are here to help </h3>
+            <p style="font-family: IBM Plex sans;color: darkgrey;font-size: 16px;">Visit detailed FAQs section or call us , available from 9AM to 9PM. </p>
+        <a href="#"> <div class="justifysetting"> 
+            <p style="font-family: IBM Plex sans;color: gray;font-size: 14px;color: green;">FAQS</p>
+            <p style="font-family: IBM Plex sans;color: gray;font-size: 14px;color: green;">CONTACT US</p>
+        </a></div>
+        </div>
+        <div class="a2">
+        <center><img
+        src="https://www.zoomcar.com/zap/subscribe/build/1481c0a139f0327896e2b071d9e392bd.svg" style=" margin-left: 50px;"></center> 
+        </div>
+        </div>
+    </div>
+</div>
+<div id="lastbox">
+    <p>.</p>
+    <h1 style="color:gainsboro;margin-top: 40px;font-family: IBM Plex sans;line-height: 1px;margin-left: 10px;">NEVER</h1>
+    <h1 style="color:gainsboro;margin-top: 20px;font-family: IBM Plex sans;line-height:5px;margin-left: 10px;">STOP</h1>
+    <h1 style="color: gainsboro;margin-top: 20px;font-family: IBM Plex sans;line-height:5px;margin-left: 10px;">LIVING .</h1>
+    <h3 style="color:black;margin-top: 20px;font-family: IBM Plex sans;line-height: 0px;margin-left: 10px;">_______</h3>
+</div>
+<div id="brefing" >
+    <div id="dropdetail"><a href="#" ><p style="color: gray;text-align: left;font-family: IBM Plex Sans ;font-size: 16px;margin-top: 10px;">More about Zoomcar Host</p></a>
+     <a href="#" ><img
+    src="https://www.zoomcar.com/zap/subscribe/build/b6a35e84e2679c629ed351c4985e858f.svg" style="width: 20px;margin-top: 10px;"> </a>
+    </div>
+    </div>
+</body>
+</html>
+<script>
+    function submit(){
+    var res=  document.querySelector("button").value;
+    var gendr=document.querySelector("#gender").value;
+    var age=document.querySelector("#years").value;
+    var agecount=2022-age;
+    if(age>18){
+        alert("your age is valid  to get merrige")
+    }
+    if(age<18){
+        alert("your age is not leagal valid to get marrige ")
+    }
+console.log(res,gendr,agecount)
+  }
+
+</script>
