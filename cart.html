@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/629044acfa.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script type="text/javascript" async="" src="https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914"></script>
+    <style>
+        /* navbar */
+        #navbar{
+            display: flex;
+            width: 100%;
+            background-color: black;
+            border-radius: 8px;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+           
+        }
+       
+        #navleft{
+            padding: 8px;
+            color: aliceblue;
+        }
+        #navmiddle{
+            width: 45%;
+            padding-left: 20px;
+            color: aliceblue;
+        }
+        #navright{
+            width: 45%;
+            justify-content: space-between;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-around;
+        }
+        p{
+            margin: 0;
+            font-size: 10px;
+        }
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            color: aliceblue;
+            
+        }
+        /* nnavbar */
+        #lrbody{
+            display: flex;
+            
+            width: 100%;
+        }
+        #left{
+            width: 30%;
+            /* border: 1px solid red; */
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            padding: 20px;
+            height: fit-content;
+        }
+        #location, #time{
+            width: 97%;
+            border: 1px solid green;
+            height: 50px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            margin: auto;
+            margin-bottom: 10px;
+            
+        }
+        #carsdetail{
+            box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+            height: 400px;
+            border-radius: 10px;
+            overflow: scroll;
+        }
+        #right{
+            width: 62%;
+            /* border: 1px solid red; */
+            margin-left: 2%;
+            box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+        }
+        #seats{
+            display: flex;
+            margin: auto;
+            justify-content: center;
+        }
+        #seats{
+            padding: 10px;
+            border:1px solid rgb(173, 173, 173);
+            display: flex;
+            justify-content: space-around;
+            border-radius: 8px;
+            background-color:rgb(245,245,245) ;
+        }
+        #cartype,#transmission{
+            padding: 10px;
+            border:1px solid rgb(173, 173, 173);
+            display: flex;
+            justify-content: space-around;
+            border-radius: 8px;
+            font-size: 12px;
+            background-color:rgb(245,245,245) ;
+        }
+        
+        #fuelinc{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            border:1px solid rgb(173, 173, 173);
+            background-color:rgb(245,245,245) ;
+            border-radius: 8px;
+            padding: 4px 0;
+        }
+        #fuelinc div{
+            background-color: green;
+            color: white;
+            padding: 4px;
+            text-align: center;
+            width: 90%;
+        
+        }
+        #hatchback{
+            padding: 0 10px;
+        }
+       
+        body{
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            font-style: normal;
+            font-size: 14px;
+            -webkit-font-smoothing: antialiased;
+            background-color: rgb(245,245,245);
+        }
+    </style>
+   
+</head>
+<body>
+    <div id="navbar">
+        <div id="navleft">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div id="navmiddle"> <b>ZOOMCAR</b> <P>  ...Never Stop Living</P></div>
+        <div id="navright">
+            <a href="">Became a Host</a>
+            <a href="">ZMS</a>
+            <a href="">login/signup</a>
+        </div>
+    </div>
+    <!-- navbar -->
+<div id="lrbody">
+    <div id="left">
+        <h5>Fuel Cost</h5>
+        <div id="fuelinc"> <div>Not Inclded</div></div>
+        <h5>Seats</h5>
+        <div id="seats">
+            <div id="seat5">5</div>
+            <div id="seat6">6</div>
+            <div id="seat7">7</div>
+        </div>
+        <h5>Car Types</h5>
+        <div id="cartype">
+            <div id="suv">SUV</div>
+            <div id="hatchback">Hatchback</div>
+            <div id="Sedan">Sedan</div>
+        </div>
+        <h5>TrannsMission</h5>
+        <div id="transmission">
+            <div id="munal">Munal</div>
+            <div id="Automatic">Automatic</div>
+        </div>
+
+    </div>
+<!-- right div -->
+
+    <div id="right">
+        <div id="location"></div>
+        <div id="time"></div>
+        <div id="carsdetail"></div>
+    </div>
+</div>
+</body>
+</html>
