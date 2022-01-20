@@ -17,6 +17,7 @@
     font-size: 14px;
     -webkit-font-smoothing: antialiased;
  
+ 
 }
    
     #navbar{
@@ -25,8 +26,12 @@
             background-color: black;
             border-radius: 8px;
             height: 50px;
-           justify-content: center;
+            justify-content: center;
             align-items: center;
+             position: fixed;
+             margin-top: -10px;
+         
+            
         }
        
         #navleft{
@@ -59,12 +64,14 @@
     #firstbox{
     width:65%;
     height: 280px;
-    margin: auto;
+   margin-left:240px;
+   margin-top: 20px;
     padding: 54px 0 60px 90px;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
       background-position: center;
     background-image: url("https://d3nf5tpyv9dqpe.cloudfront.net/build/0c2a7b883fc9ecd555fa373153388b48.png");
     border-radius: 12px;
+    
     
 }
 h1{
@@ -228,7 +235,7 @@ margin-left: 20px;
 </style>
 
 <body>
-    <div id="navbar">
+    <div id="navbar" >
         <div id="navleft">
         <i class="fas fa-bars"></i>
         </div>
@@ -243,6 +250,7 @@ margin-left: 20px;
       </div>
 
     </div>
+    <p>.</p>
     <div id="firstbox">
         <h1>Share your car when</h1>
         <h1>not in use and earn up to </h1>
