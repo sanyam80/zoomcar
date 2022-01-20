@@ -373,8 +373,6 @@ div{
     padding-top: 8px;
     padding-right: 20px;
     margin-right: 5px;
-
-
 }
 
 .innerbullet2second
@@ -642,6 +640,20 @@ div{
     color: #666;
     padding-left: 5px;
 }
+#requirements{
+    font-family:IBM Plex Sans;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 12px;
+    color: #666;
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    padding: 16px 12px;
+    outline: none;
+}
     </style>
 </head>
 <body>
@@ -655,7 +667,7 @@ div{
 <div  class="insidetext"><P>Inspiring Profitable Mobility<br> Solutions of Tomorrow</P>
    <div class="outsidetext"><p>Suite of Connected Technology Offerings and Connected Mobility</p><p>Solutions for Businesses Worldwide</p></div>
 
-   <form action=""></form> <p><p><a href="#bottom" ><button type="submit" id="btn" >Request Demo</button></a></p></p></form>
+   <form action=""></form> <p><p><input type="submit" id="btn" value="Request Demo" onclick="myfunction()" ></p></p></form>
   
 </div>
 </div>
@@ -800,13 +812,12 @@ div{
     <div class="section-title">Connect With Us</div>
     <div class="section-subtext">Leave details for us to help your business become future ready</div> 
     <div class="contact-form">
-        <div class="form-horizontal"
- ><div class="input-box-container right-spacing">
-    
-  <div class="text-input-wrapper">
-    <form>
+        <div class="form-horizontal">
+            <div class="input-box-container right-spacing">
+                <form>   <div class="text-input-wrapper">
+   
 <input name="contactName" id="contactName" placeholder="Name" maxlength="250" inputmode="text" autocomplete="off" type="text" class="">
-<div class="error-msg"></div></div></div>
+</div></div>
  <div class="input-box-container">
  <div class="text-input-wrapper">
 <input name="contactCompany" id="contactCompany" placeholder="Company Name" maxlength="250" inputmode="text" autocomplete="off" type="text" class="">
@@ -827,10 +838,9 @@ div{
  <textarea type="text" name="requirements" id="requirements" placeholder="Mention Requirements" inputmode="text"  rows="4" cols="50"></textarea>
 </div></div> 
  <div class="cta-container ">
-     <input type="submit" class="btn-cta" value="Submit">
- </form>
+     <input type= "submit" class="btn-cta" value="Submit">
 </div>
- <div class="error"></div></div></div>
+ </div></div> </form>
  <div class="bottom-border-green"> </div>
 <section class="footer-section">
  For more information, connect with us at</div> <div class="mailId">zms.contact@zoomcar.com</div> 
@@ -841,13 +851,15 @@ div{
 </html>
 
 <script>
-    document.querySelector("form").addEventListener("submit", formSubmit);
+    document.querySelector(".btn-cta").addEventListener("click", formSubmit);
     var userStack = JSON.parse(localStorage.getItem("userDataBase")) || [];
     
     function formSubmit(event) 
     {
       event.preventDefault();
+      console.log("helo");
 var name = document.querySelector("#contactName").value;
+var companyname = document.querySelector("#contactCompany").value;
 var email = document.querySelector("#contactEmailId").value;
 var mbl = document.querySelector("#contactPhone").value;
 var country = document.querySelector("#contactCountry").value;
@@ -855,6 +867,7 @@ var requirement = document.querySelector("#requirements").value;
   
       var userData = {
           nme:name,
+          cmpny:companyname,
         emailAdd: email,
         mobl: mbl,
         cntry:country,
@@ -865,7 +878,10 @@ var requirement = document.querySelector("#requirements").value;
       console.log(userStack);
       localStorage.setItem("userDataBase", JSON.stringify(userStack));
       alert("Data Saved");
+      window.location.href("home.html");
       
     }
+
+    
     
 </script>
