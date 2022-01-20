@@ -227,8 +227,8 @@
        #pickDropEntry hr{
            width: 70%;
        }
-       button{
-           width: 100%;
+       #findcars{
+           width: 90%;
            border-radius: 5px;
            border: none;
            padding: 8px;
@@ -238,6 +238,7 @@
            background-color:rgb(224,224,224) ;
            color:rgb(188,173,168) ;
            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+           margin: auto;
        }
        #aboutus{
            margin: auto;
@@ -323,16 +324,18 @@
                     </select>
                 </div>
                 <div id="pickDropEntry">
-                    <div id="pickpoint"><input id="pickadress" type="text" placeholder="Pick Up City, Airport, Adress or Hotel"></div>
+                    <form action="">
+                        <div id="pickpoint" value=""><input id="pickadress" type="text" placeholder="Pick Up City, Airport, Adress or Hotel"></div>
+                        
+                        <hr>
+                        <div id="droppoient"><input id="picktime" type="time" placeholder="Enter your time" value=""></div>
+                        <br>
+                      <div id="findcars"> <input type="submit" value="Find Cars"  ></div>
                     
-                    <hr>
-                    <div id="droppoient"><input id="picktime" type="time" placeholder="Enter your time"></div>
-                    
+                    </form>
                 </div>
-                <br>
-                <button id="findcars" onclick="findcars()">
-                    FIND CARS
-                </button>
+                
+               
             </div>
         </div>
        </div>
@@ -429,10 +432,20 @@
 </body>
 </html>
 <script>
-    function findcars(){
-        window.location.href="cart.html";                       
-        var pickadress=document.getElementById("pickadress").value;
-        var picktime=document.getElementById("picktime").value;
-        console.log(pickadress,picktime)
-    }
+     document.querySelector("form").addEventListener("submit",submitdetail);
+     var searchentry=JSON.parse(localStorage.getItem("searchUserdata")) ||[];
+     function submitdetail(event){
+         event.preventDefault();
+         var adress =document.querySelector("#pickadress").value;
+         var time =document.querySelector("#picktime").value;
+        //  console.log(adress,time)
+         var searchdata={
+             adress:adress,
+             time:time
+         }
+         searchentry.push(searchdata);
+         localStorage.setItem("searchUserdata",JSON.stringify(searchentry))
+         window.location.href="cart.html";
+     }
+     
 </script>
