@@ -1,0 +1,85 @@
+
+.page-policy{
+    padding: 10px;
+    margin-left: 200px;
+    width: 930px; ;
+    border: 0px solid grey;
+}
+
+.static_title{
+    font: 28px sans-serif;
+    padding: 11px;
+}
+
+.policies_static{
+    font-size: 15px;
+    font: sans-serif;
+}
+
+.damage{
+    color: green;
+    font-weight: bold;
+}
+
+.p-10{
+    padding: 10px;
+    font: 1em sans-serif;
+    font: bold;
+    
+}
+
+.policy_tabs_tabs__header{
+  display: flex;
+}
+
+.policy_tabs_tabs__header{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.tab-active{
+  margin-left: 40px;
+  margin-right: 5px;
+  font: 13px sans-serif;
+  font-weight: bold;
+}
+
+.border-zoom{
+    border: 1px solid grey;
+}
+
+.sentense{
+    padding: 10px;
+}
+
+.p120{
+    font: 1em sans-serif;
+}
+
+.p-11{
+    color: green ;
+    font: 20px sans-serif ;
+    font: bold;
+ 
+}
+
+.p-12{
+    color: black;
+    font-size: 15px;
+}
+
+.p-13{
+    font-size: 20px;
+    color: gray;
+    font: bolder;
+}
+
+.fee-note-li{
+    padding: 8px;
+    font: 15px sans-serif ;
+}
+
+a{
+    text-decoration: none;
+    color: black;  
+  }

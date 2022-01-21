@@ -1,0 +1,269 @@
+
+    .container {
+        width: 71%;
+        height: 2277px;
+        border: 1px solid gray;
+        margin-left: 14%;
+        margin-top: 10%;
+    }
+
+    #navbar {
+        display: flex;
+        width: 100%;
+        background-color: black;
+        border-radius: 0px;
+        height: 60px;
+        /* justify-content: center; */
+        align-items: center;
+        margin-bottom: 40px;
+        /* position: fixed; */
+    }
+
+    #navleft {
+        margin-left: 13px;
+        padding: 8px;
+        color: white;
+    }
+
+    #navmiddle {
+        width: 45%;
+        padding-left: 20px;
+        color: aliceblue;
+    }
+
+    #navright {
+        width: 45%;
+        justify-content: space-between;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-around;
+    }
+
+    
+    p {
+        margin: 0;
+        font-size: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: aliceblue;
+
+    }
+
+
+
+
+
+
+    .help_support_wrap {
+        -ms-wrap-flow: inherit;
+        display: flex;
+        display: table-row;
+        border: 1px solid blue;
+        font-weight: bolder;
+        font: 1em sans-serif;
+        margin-top: 15;
+        width: 90%;
+        height: 800px;
+    }
+
+    #helper {
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-size: 28px;
+        -webkit-font-smoothing: antialiased;
+        font-weight: 700;
+        text-align: left;
+
+    }
+
+    .help_support_header {
+        /* border: 1px solid red; */
+        margin-top: 4%;
+        margin-left: 2%;
+    }
+
+    .container2 {
+        display: flex;
+        width: 900px;
+        height: 200px;
+        /* border: 1px solid violet; */
+        margin-left: 18px;
+    }
+
+    .item1 {
+        border: 1px solid rgb(192, 192, 192);
+        width: 750px;
+        height: 100px;
+        padding: 15px;
+        margin: 0px;
+        margin-top: 50px;
+        margin-left: 22px;
+        cursor: pointer;
+        cursor: gray;
+
+    }
+
+    .img1 {
+        /* border: 1px solid yellow; */
+        width: auto;
+        height: 32px;
+        margin-left: 24px;
+        margin-left: 29px;
+        /* padding: 45px; */
+
+    }
+
+    .tab_name {
+        color: black;
+        text-align: center;
+        /* border: 1px solid grey; */
+        text-decoration: none;
+        font-size: 17px;
+        margin-left: 0px;
+        word-spacing: 5px;
+        margin-top: 15px;
+    }
+
+    .popular_queries {
+        font: 1.4em sans-serif;
+        width: 350;
+        height: 150px;
+        margin-top: 0px;
+    }
+
+    .query_title {
+        font-size: 24px;
+        margin-left: 2%;
+        width: 250px;
+        height: 0px;
+        margin-top: 30px;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-size: 18px;
+        word-spacing: 5px;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    #popular_accordion {
+        border: 0px solid rgb(192, 192, 192);
+        margin-left: 2%;
+        margin-top: 0px;
+        width: 926px;
+    }
+
+    .accordion-item-trigger {
+        width: 100%;
+        border: 0px solid;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-size: 16px;
+        -webkit-font-smoothing: antialiased;
+        padding: 0;
+        margin: 0px;
+        text-align: left;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .btn_show_more_container {
+        text-align: center;
+    }
+
+    .btn_show_more {
+        font-size: 21px;
+        height: 29px;
+        width: 200px;
+        font-size: medium;
+        background-color: white;
+        cursor: pointer;
+        touch-action: manipulation;
+        margin-top: 15px;
+    }
+
+    .cant_find_us {
+        display: flex;
+        border: 1% solid gray;
+        margin-top: 35px;
+        margin-left: 1.5px;
+        width: 101.92%;
+        height: 100%;
+        box-shadow: rgba(0, 0, 0, .60) 0px 1px 7px;
+    }
+
+    .fl {
+        width: 450px;
+        text-align: left;
+        border: 0px solid red;
+    }
+
+    .heading {
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-size: 20px;
+        margin-left: 29px;
+        -webkit-font-smoothing: antialiased;
+        margin-top: 45px;
+        border: 0px solid springgreen;
+        height: 5px;
+
+    }
+
+    .sub-heading {
+        width: 150px;
+        border: 0px solid yellow;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-size: 14px;
+        -webkit-font-smoothing: antialiased;
+        color: lightgray;
+        margin-left: 29px;
+
+
+    }
+
+    .help-page {
+        border: 1px solid rgb(223, 220, 220);
+        border-radius: 4px;
+        margin-left: 9px;
+        margin-top: 15px;
+        width: 450px;
+        height: 120px;
+        text-align: left;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-size: 17px;
+        -webkit-font-smoothing: antialiased;
+
+    }
+
+    .help-button-text {
+        border: 1px solid black;
+        display: table-row;
+        margin-left: 15px;
+        margin-top: 10px;
+        padding: 25px;
+    }
+
+    .mail-num {
+        border: 0px solid red;
+        margin-top: 27px;
+        margin-left: 25px;
+        color: black;
+    }
+
+    .gren {
+
+        border: 0px solid green;
+        margin: 18px;
+        margin-left: 25px;
+        font-weight: bolder;
+        color: rgb(74, 156, 74);
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-size: 13px;
+        -webkit-font-smoothing: antialiased;
+
+    }
