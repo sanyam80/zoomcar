@@ -382,7 +382,12 @@
       price:5825,
     },
 ];
-
+var scdata=JSON.parse(localStorage.getItem("searchUserdata"));
+    console.log(scdata) 
+    scdata.map(function (elem){
+        document.getElementById("location").textContent= `Journey Starts From :-${elem.adress}`;
+        document.getElementById("time").textContent=`Starts time will be :-${elem.time}`;
+    })
 display(carsData);
 
 
@@ -509,36 +514,20 @@ button.forEach(e => {
         ind=e.value;
     carsData.forEach(function (e){
     if(e.index==ind){
-        
+    
         bookData.push(e);
         console.log(bookData)
       }
 
 })
     localStorage.setItem("booking",JSON.stringify(bookData));
-    // window.location.assign("booking.html");
+    window.location.href="booking.html";
     })
     
 });
 localStorage.setItem("booking",bookData);
 
 console.log(bookData)
-
-
-
-
-
-
-    
-
-
-
-    
-
-
-
-
-
 
 
 </script>
