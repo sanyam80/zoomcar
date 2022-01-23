@@ -503,31 +503,31 @@ function myfunction(){
     console.log(data);
     display(data);
 
-}
-var ind=0;
-var bookData=[];
 
-var button = document.querySelectorAll(".button");
-button.forEach(e => {
-    e.addEventListener("click",function (){
-        console.log(e.value);
-        ind=e.value;
-    carsData.forEach(function (e){
-    if(e.index==ind){
-    
-        bookData.push(e);
-        console.log(bookData)
-      }
+    var ind=0;
+    var bookData=[];
 
-})
-    localStorage.setItem("booking",JSON.stringify(bookData));
-    window.location.href="booking.html";
+    var button = document.querySelectorAll(".button");
+    button.forEach(e => {
+        e.addEventListener("click",function (){
+            console.log(e.value);
+            ind=e.value;
+        carsData.forEach(function (e){
+        if(e.index==ind){
+        
+            bookData.push(e);
+            console.log(bookData)
+        }
+
     })
-    
-});
-localStorage.setItem("booking",bookData);
+        localStorage.setItem("booking",JSON.stringify(bookData));
+        window.location.href="booking.html";
+        })
+        
+    });
+    localStorage.setItem("booking",bookData);
 
-console.log(bookData)
-
+    console.log(bookData)
+}
 
 </script>
