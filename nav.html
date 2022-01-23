@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://kit.fontawesome.com/629044acfa.js" crossorigin="anonymous"></script>
    <style>
       
-        /* #container{
+        #container{
             background-color:black;
             height:100px;
             display:flex;
@@ -22,6 +21,7 @@
            
             margin-top:-0.5px;
             margin-top:10px;
+           
             
         }
         #left1 > #inputd{
@@ -43,12 +43,13 @@
             margin-top:-39px;
            
             
+
         }
         #left1{
             margin-left:10px;
             width:30%;
-            /* border: 1px solid white; */
-            /* margin-left:10px ;
+           
+            margin-left:50px ;
         }
         #right{
             display:flex;
@@ -59,66 +60,16 @@
         }
         #right > h2{
             color:white;
-        } */ 
-        #navbar{
-            display: flex;
-            width: 100%;
-            background-color: black;
-            border-radius: 8px;
-            height: 50px;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 40px;
-            position: fixed;
-            font-size: 20px;
-            font-family: IBM Plex sans;
-        }
-       
-        #navleft{
-            padding: 8px;
-            font-size: 20px;
-            color: white;
-        }
-        #navmiddle{
-            width: 45%;
-            font-size: 20px;
-            padding-left: 20px;
-            color: aliceblue;
-        }
-        #navright{
-            width: 45%;
-            justify-content: space-between;
-            /* border: 1px solid red; */
-            display: flex;
-            font-size: 20px;
-            justify-content: space-around;
-        }
-        p{
-            margin: 0;
-            font-size: 10px;
-        }
-        a{
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 20px;
-            font-family: IBM Plex sans;
-            color: aliceblue;
-            
+
         }
        #homehead{
         /* background: linear-gradient(rgb(168,168,168), #cbe0c3); */
         background-image: url("https://www.zoomcar.com/img/bg-desktop.png");
         width: 100%;
         height:500px;
-         background-size:cover;
         background-repeat: no-repeat;
-          background-size: 100% 80%;
-          position:relative;
-          display: flex;
-                    margin-bottom: 50px;
-          background-position: 50% 70%;
-    margin: 0px;
-
+        background-size: cover;
+        margin-bottom: 50px;
         /* border: 2px solid red; */
         display: flex;
         justify-content: center; 
@@ -204,7 +155,6 @@
        #footertxt{
            width: 65%;
            margin: auto;
-           font-family: IBM Plex Sans;
 
        }
        span{
@@ -213,7 +163,7 @@
        }
        h3{
            font-size: 15px;
-           font-family:IBM Plex Sans;
+           font-family: IBM Plex Sans;
        }
        #way{
            padding: 15px;
@@ -228,7 +178,7 @@
        }
        input{
            border: none;
-           font-size: 10px;
+           font-size: 20px;
            font-weight: bold;
            padding-bottom: 10px;
            width: 80%;
@@ -237,18 +187,17 @@
        #pickDropEntry hr{
            width: 70%;
        }
-       #findcars{
-           width: 90%;
+       button{
+           width: 100%;
            border-radius: 5px;
            border: none;
            padding: 8px;
-           font-family: IBM Plex Sans;
+           font-family: IBM Plex sans;
            font-weight: bold;
-           font-size: 12px;
+           font-size: 20px;
            background-color:rgb(224,224,224) ;
            color:rgb(188,173,168) ;
            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-           margin: auto;
        }
        #aboutus{
            margin: auto;
@@ -265,7 +214,7 @@
            padding: 6px;
            width: 20%;
            font-weight: bold;
-           font-size: 10px;
+           font-size: 20px;
            color: gray;
        }
        h6{
@@ -283,17 +232,21 @@
                height: 300px;
                background-size: contain;
            }
+        
            
           
        }
-       
+
+       body{
+           font-family: IBM Plex sans;
+           font-size: 20px;
+       }
 
    </style>
-    
 </head>
 <body>
     <!-- nav bar -->
-    <!-- <div id = "container">
+    <div id = "container">
         
             <div id ="left">
                 <img src = "https://is2-ssl.mzstatic.com/image/thumb/Purple125/v4/30/c0/46/30c0468f-37bd-896c-a87b-05984fcc7ac1/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/400x400.png">
@@ -309,23 +262,8 @@
             <h2>ZMS</h2>
             <h2>Login/signup</h2>
         </div>
-    </div> -->
-    <div id="navbar">
-        <div id="navleft">
-            <a href="HamburgerMENU.html">
-            <i class="fas fa-bars"></i> </a>
-        </div>
-        <div id="navmiddle"> <b>ZOOMCAR</b>
-            <P> ...Never Stop Living</P>
-        </div>
-        <div id="navright">
-            <a href="becomehost.html">Became a Host</a>
-            <a href="zms.html">ZMS</a>
-            <a href="login_signup.html">login/signup</a>
-        </div>
     </div>
-
-
+    <!-- navbar -->
 
      <!-- book ride section -->
     <div id="homehead">
@@ -339,18 +277,16 @@
                     </select>
                 </div>
                 <div id="pickDropEntry">
-                    <form action="">
-                        <div id="pickpoint" value=""><input id="pickadress" type="text" placeholder="Pick Up City, Airport, Adress or Hotel"></div>
-                        
-                        <hr>
-                        <div id="droppoient"><input id="picktime" type="time" placeholder="Enter your time" value=""></div>
-                        <br>
-                      <div id="findcars"> <input type="submit" value="Find Cars"  ></div>
+                    <div id="pickpoint"><input type="text" placeholder="Pick Up City, Airport, Adress or Hotel"></div>
                     
-                    </form>
+                    <hr>
+                    <div id="droppoient"><input type="text" placeholder="rop off City, Airport, Adress or Hotel"></div>
+                    
                 </div>
-                
-               
+                <br>
+                <button>
+                    FIND CARS
+                </button>
             </div>
         </div>
        </div>
@@ -395,8 +331,8 @@
                 <div>
                     <img src="https://www.zoomcar.com/img/login-card.jpg" alt="">
                 </div>
-                <div >
-                     <h4>LOGIN</h4></a>
+                <div>
+                     <h4>LOGIN</h4>
                     <p>If you have an upcomingor a live booking, then login o view your booking.</p>
                 </div>
             </div>
@@ -447,20 +383,5 @@
 </body>
 </html>
 <script>
-     document.querySelector("form").addEventListener("submit",submitdetail);
-     var searchentry=JSON.parse(localStorage.getItem("searchUserdata")) ||[];
-     function submitdetail(event){
-         event.preventDefault();
-         var adress =document.querySelector("#pickadress").value;
-         var time =document.querySelector("#picktime").value;
-        //  console.log(adress,time)
-         var searchdata={
-             adress:adress,
-             time:time
-         }
-         searchentry.push(searchdata);
-         localStorage.setItem("searchUserdata",JSON.stringify(searchentry))
-         window.location.href="cart.html";
-     }
-     
+    
 </script>
