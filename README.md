@@ -1,11 +1,29 @@
 <h1 align="center"> Zoomcar-clone</h1>
 <p align="center">This is a Indian self driving car rental website. </p>
-<p>Things uses in building this project…
-HTML (HyperText Markup Language)
-CSS (Cascading Style Sheets)
-Jscript(Java Script)
-getcssscan (a website to get many styles);
-local Storage (to store and transfer the required data from one page to another)</p>
+# Deployed Link:
+
+<h2>https://zoom-car-clone.netlify.app/</h2> 
+
+# Technology We Used :computer: 
+1. HTML5
+2. CSS3
+3. JavaScript
+
+# Features
+1.You will be able to create your account using login and signup option.
+
+2.You can Search and book cars on a desired day and time.
+
+3.User can also Filter cars (according to seates and type).
+
+4.All the data is stored in the localStorage of the User.
+If you want to visit this cloned website then it is recommended to go through this link 
+
+## Instructions to Run the Code 
+
+- Clone the repository `https://github.com/sanyam80/zoomcar`
+- Then Open the code in your VS code
+- At last Open the `index.html` with Live server
 <h2>Homepage<h2>
 <img src="https://miro.medium.com/max/700/0*dRRi7mwcDE1rOt9e.png">
 <h2>Homepage-2<h2>
